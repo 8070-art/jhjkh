@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Homesnear Real Estate</title>
+  <title>Business House | Contact Us</title>
+
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
+      background: linear-gradient(to right, #fefbe2, #847058);
       color: #333;
     }
 
+    /* HEADER */
     header {
-      background-color: white;
+      background-color: #ffffff;
       border-bottom: 1px solid #ddd;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     }
-
     .nav-container {
       max-width: 1200px;
       margin: auto;
@@ -26,144 +26,158 @@
       align-items: center;
       padding: 15px 20px;
     }
-
     .brand {
+      font-size: 1.5em;
       font-weight: bold;
-      font-size: 1.4em;
       color: #4C9C98;
       text-decoration: none;
     }
-
     .nav-links a {
-      margin: 0 10px;
+      margin-left: 15px;
       text-decoration: none;
       color: #333;
       font-size: 0.95em;
     }
 
-    .nav-links a:hover {
-      color: #0b7285;
-    }
-
-    .about-hero {
-      background: linear-gradient(to right, #847058, #fefbe2);
-      color: white;
-      text-align: center;
-      padding: 70px 20px;
-    }
-
-    .about-hero h1 {
-      font-size: 2.4em;
-      margin-bottom: 10px;
-    }
-
-    .about-hero p {
-      font-size: 1.1em;
-      max-width: 600px;
-      margin: auto;
-    }
-
-    .about-content {
-      max-width: 1000px;
-      margin: 60px auto;
+    /* MAIN */
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
       padding: 0 20px;
-      line-height: 1.6;
     }
 
-    .about-section {
-      margin-bottom: 40px;
+    .contact-box {
+      background: #ffffff;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
     }
 
-    .about-section h2 {
-      color: #0067E0;
-      border-left: 4px solid #e69900;
-      padding-left: 10px;
-      font-size: 1.5em;
-      margin-bottom: 10px;
-    }
-
-    .team {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 30px;
-    }
-
-    .team-member {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      width: 280px;
+    .contact-box h1 {
+      margin-top: 0;
+      color: #4C9C98;
       text-align: center;
-      padding: 20px;
     }
 
-    .team-member img {
-      border-radius: 50%;
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      margin-bottom: 10px;
-    }
-
-    .team-member h3 {
-      color: #0067E0;
-      margin-bottom: 5px;
-    }
-
-    footer {
-      background-color: #fff;
-      border-top: 1px solid #ddd;
+    .contact-box p {
       text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
       color: #555;
+      margin-bottom: 30px;
+    }
+
+    /* FORM */
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 0.95em;
+      box-sizing: border-box;
+    }
+
+    form textarea {
+      grid-column: span 2;
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .btn-submit {
+      grid-column: span 2;
+      padding: 14px;
+      background-color: #4C9C98;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn-submit:hover {
+      background-color: #3a7f7b;
+    }
+
+    /* CONTACT INFO */
+    .contact-info {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      text-align: center;
+    }
+
+    .info-item {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      font-size: 0.95em;
     }
 
     @media (max-width: 768px) {
-      .team {
-        flex-direction: column;
-        align-items: center;
+      form {
+        grid-template-columns: 1fr;
+      }
+      form textarea,
+      .btn-submit {
+        grid-column: span 1;
+      }
+      .contact-info {
+        grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
+
 <body>
+
 <header>
-  <div class="nav">
-    <a href="#" class="brand">Business House</a>
-    <nav>
+  <div class="nav-container">
+    <a href="index.html" class="brand">Business House</a>
+    <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="contents web.html">Contents</a>
-	  <a href="Pricing.html">Pricing</a> 
-	  <a href="calc.html">Calculation</a>
-      <a href="Us ab.html">Contact</a>
+      <a href="Pricing.html">Pricing</a>
+      <a href="calc.html">Calculation</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
-  <section class="about-hero">
-    <h1>Contact us&nbsp;</h1>
-</section>
+<main class="container">
 
-<section class="about-content">
-  <div class="about-section"> </div>
+  <div class="contact-box">
+    <h1>📞 Contact Us</h1>
+    <p>Have questions about our properties? Leave us a message and we’ll get back to you.</p>
 
-  <div class="about-section"> </div>
-
-    <div class="about-section">
-<div class="team">
-      <div class="team-member">
-        <p>Contact us</p>
-        <p>Phone number: +0 (000) 000-0000</p>
-        <p>Email: example@email.com&nbsp;</p>
-      </div>
-</div>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="tel" placeholder="Phone Number">
+      <input type="text" placeholder="Subject">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit" class="btn-submit">Send Message</button>
+    </form>
   </div>
-  </section>
+
+  <div class="contact-info">
+    <div class="info-item">📍 Min Buri, Bangkok, Thailand</div>
+    <div class="info-item">📞 +66 89 123 4567</div>
+    <div class="info-item">✉️ contact@businesshouse.com</div>
+  </div>
+
+</main>
+
 </body>
 </html>
+
 
 
 
