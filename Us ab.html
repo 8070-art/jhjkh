@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Homesnear Real Estate</title>
+  <title>Contact Us | Business House</title>
+
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
+      background: linear-gradient(to right, #fefbe2, #847058);
       color: #333;
     }
 
+    /* HEADER */
     header {
-      background-color: white;
+      background-color: #ffffff;
       border-bottom: 1px solid #ddd;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     }
 
     .nav-container {
@@ -35,132 +36,195 @@
     }
 
     .nav-links a {
-      margin: 0 10px;
+      margin-left: 15px;
       text-decoration: none;
       color: #333;
       font-size: 0.95em;
     }
 
     .nav-links a:hover {
-      color: #0b7285;
+      color: #4C9C98;
     }
 
-    .about-hero {
-      background: linear-gradient(to right, #847058, #fefbe2);
-      color: white;
+    /* HERO */
+    .contact-hero {
       text-align: center;
       padding: 70px 20px;
+      color: #fff;
     }
 
-    .about-hero h1 {
+    .contact-hero h1 {
       font-size: 2.4em;
       margin-bottom: 10px;
     }
 
-    .about-hero p {
+    .contact-hero p {
       font-size: 1.1em;
       max-width: 600px;
       margin: auto;
     }
 
-    .about-content {
-      max-width: 1000px;
+    /* MAIN CONTENT */
+    .container {
+      max-width: 900px;
       margin: 60px auto;
       padding: 0 20px;
-      line-height: 1.6;
     }
 
-    .about-section {
-      margin-bottom: 40px;
+    .contact-box {
+      background: #ffffff;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
     }
 
-    .about-section h2 {
-      color: #0067E0;
-      border-left: 4px solid #e69900;
-      padding-left: 10px;
-      font-size: 1.5em;
-      margin-bottom: 10px;
+    .contact-box h2 {
+      text-align: center;
+      color: #4C9C98;
+      margin-top: 0;
     }
 
-    .team {
-      display: flex;
-      flex-wrap: wrap;
+    /* FORM */
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 20px;
-      justify-content: center;
       margin-top: 30px;
     }
 
-    .team-member {
-      background: white;
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 0.95em;
+      box-sizing: border-box;
+    }
+
+    form textarea {
+      grid-column: span 2;
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      grid-column: span 2;
+      padding: 14px;
+      background-color: #4C9C98;
+      color: #fff;
+      border: none;
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      width: 280px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3a7f7b;
+    }
+
+    /* CONTACT INFO */
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 40px;
       text-align: center;
+    }
+
+    .info-card {
+      background: #ffffff;
       padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      font-size: 0.95em;
     }
 
-    .team-member img {
-      border-radius: 50%;
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      margin-bottom: 10px;
+    .info-card a {
+      color: #4C9C98;
+      text-decoration: none;
+      font-weight: bold;
     }
 
-    .team-member h3 {
-      color: #0067E0;
-      margin-bottom: 5px;
-    }
-
-    footer {
-      background-color: #fff;
-      border-top: 1px solid #ddd;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #555;
+    .info-card a:hover {
+      text-decoration: underline;
     }
 
     @media (max-width: 768px) {
-      .team {
-        flex-direction: column;
-        align-items: center;
+      form {
+        grid-template-columns: 1fr;
+      }
+      form textarea,
+      button {
+        grid-column: span 1;
+      }
+      .contact-info {
+        grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
-<body>
-  <header>
-    <div class="nav-container">
-      <a href="estate web.html" class="brand">Business House&nbsp;</a>
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="contents web.html">Contents</a>
-	  <a href="Pricing.html">Pricing</a> <a href="calc.html">Calculation</a> <a href="Us ab.html">Contact</a> </nav>
-    </div>
-  </header>
 
-  <section class="about-hero">
-    <h1>Contact us&nbsp;</h1>
+<body>
+
+<header>
+  <div class="nav-container">
+    <a href="index.html" class="brand">Business House</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="contents web.html">Contents</a>
+      <a href="Pricing.html">Pricing</a>
+      <a href="calc.html">Calculation</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="contact-hero">
+  <h1>📞 Contact Us</h1>
+  <p>Get in touch with us for property details, pricing, or special promotions</p>
 </section>
 
-<section class="about-content">
-  <div class="about-section"> </div>
+<main class="container">
 
-  <div class="about-section"> </div>
+  <div class="contact-box">
+    <h2>Send Us a Message</h2>
 
-    <div class="about-section">
-<div class="team">
-      <div class="team-member">
-        <p>Contact us</p>
-        <p>Phone number: +0 (000) 000-0000</p>
-        <p>Email: example@email.com&nbsp;</p>
-      </div>
-</div>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="tel" placeholder="Phone Number">
+      <input type="text" placeholder="Subject">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </div>
-  </section>
+
+  <div class="contact-info">
+    <div class="info-card">
+      📍 Min Buri, Bangkok, Thailand
+    </div>
+
+    <div class="info-card">
+      📸 Instagram<br>
+      <a href="https://www.instagram.com/businesshouse" target="_blank">
+        @businesshouse
+      </a>
+    </div>
+
+    <div class="info-card">
+      📘 Facebook<br>
+      <a href="https://www.facebook.com/businesshouse" target="_blank">
+        Business House
+      </a>
+    </div>
+  </div>
+
+</main>
+
 </body>
 </html>
+
 
 
 
